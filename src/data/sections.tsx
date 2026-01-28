@@ -2,6 +2,7 @@ import { type ReactElement } from "react";
 import { Section } from "@/components/templates";
 import { FullWidthLayout } from "@/components/layouts";
 import { WhatIsDerivativeSection } from "./sections/WhatIsDerivative";
+import { SlopeOfCurveSection } from "./sections/SlopeOfCurve";
 import { Heading } from "@/components/molecules/Heading";
 import { Paragraph } from "@/components/molecules/Paragraph";
 
@@ -37,5 +38,10 @@ export const sections: ReactElement[] = [
     // Section 1: What is a Derivative?
     <FullWidthLayout key="what-is-derivative" maxWidth="xl">
         <WhatIsDerivativeSection />
+    </FullWidthLayout>,
+
+    // Section 2: The Slope of a Curve
+    <FullWidthLayout key="slope-of-curve" maxWidth="xl">
+        <SlopeOfCurveSection />
     </FullWidthLayout>,
 ];
