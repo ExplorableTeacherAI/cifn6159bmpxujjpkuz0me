@@ -5,6 +5,7 @@ import { WhatIsDerivativeSection } from "./sections/WhatIsDerivative";
 import { SlopeOfCurveSection } from "./sections/SlopeOfCurve";
 import { SecantToTangentSection } from "./sections/SecantToTangent";
 import { BasicDerivativesSection } from "./sections/BasicDerivatives";
+import { FunctionAndDerivativeSection } from "./sections/FunctionAndDerivative";
 import { Heading } from "@/components/molecules/Heading";
 import { Paragraph } from "@/components/molecules/Paragraph";
 
@@ -55,5 +56,10 @@ export const sections: ReactElement[] = [
     // Section 4: Calculating Basic Derivatives
     <FullWidthLayout key="basic-derivatives" maxWidth="xl">
         <BasicDerivativesSection />
+    </FullWidthLayout>,
+
+    // Section 5: The Function and Its Derivative
+    <FullWidthLayout key="function-and-derivative" maxWidth="xl">
+        <FunctionAndDerivativeSection />
     </FullWidthLayout>,
 ];
