@@ -4,6 +4,7 @@ import { FullWidthLayout } from "@/components/layouts";
 import { WhatIsDerivativeSection } from "./sections/WhatIsDerivative";
 import { SlopeOfCurveSection } from "./sections/SlopeOfCurve";
 import { SecantToTangentSection } from "./sections/SecantToTangent";
+import { BasicDerivativesSection } from "./sections/BasicDerivatives";
 import { Heading } from "@/components/molecules/Heading";
 import { Paragraph } from "@/components/molecules/Paragraph";
 
@@ -49,5 +50,10 @@ export const sections: ReactElement[] = [
     // Section 3: From Secant to Tangent
     <FullWidthLayout key="secant-to-tangent" maxWidth="xl">
         <SecantToTangentSection />
+    </FullWidthLayout>,
+
+    // Section 4: Calculating Basic Derivatives
+    <FullWidthLayout key="basic-derivatives" maxWidth="xl">
+        <BasicDerivativesSection />
     </FullWidthLayout>,
 ];
